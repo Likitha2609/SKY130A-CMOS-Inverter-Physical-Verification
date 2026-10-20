@@ -61,3 +61,19 @@ Through this task, I gained practical experience with the CMOS inverter design f
 The following repository was used as a reference for understanding the physical verification flow:
 
 https://github.com/yathAg/Physical_Verification_SKY130A
+## Screenshots
+
+### CMOS Inverter Schematic
+![CMOS Inverter Schematic](01_Schematic/screenshots/schematic.png)
+
+### Final Magic Layout
+![Final Layout](03_Magic_Layout/screenshots/final_layout.png)
+
+### Transient Waveform
+![Transient Waveform](04_Verification/screenshots/transient_waveform.png)
+
+### Design Rule Check (DRC)
+![DRC Results](04_Verification/screenshots/drc.png)
+
+### Layout Versus Schematic (LVS)
+![LVS Results](04_Verification/screenshots/lvs.png)
