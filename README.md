@@ -80,3 +80,4 @@ https://github.com/yathAg/Physical_Verification_SKY130A
 
 ### LVS Verification Result
 
+![LVS vs Schematic](04_Verification/screenshots/LVS%20vs%20Schematic.png)
