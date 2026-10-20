@@ -1,0 +1,17 @@
+* CMOS inverter post-layout testbench
+.lib "/usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.include "cmos.spice"
+
+VDD vdd 0 DC 1.8
+VSS vss 0 0
+VIN in 0 PWL(0 0 1u 1.8)
+
+XINV in vdd vss out cmos
+CLOAD out 0 10f
+
+.control
+tran 1n 1u
+plot v(in) v(out)
+.endc
+
+.end

@@ -1,0 +1,77 @@
+* NGSPICE file created from cmos.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_KBZXWL B D0 G0 S1 G1 D2 S2 G2
+X0 S2 G2 D2 B sky130_fd_pr__nfet_01v8 ad=0.4425 pd=3.59 as=0.225 ps=1.8 w=1.5 l=0.18
+X1 S1 G0 D0 B sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.8 as=0.4425 ps=3.59 w=1.5 l=0.18
+X2 D2 G1 S1 B sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.8 as=0.225 ps=1.8 w=1.5 l=0.18
+C0 S2 G1 0.00245f
+C1 D0 S1 0.06546f
+C2 D2 S1 0.06551f
+C3 D0 G0 0.02301f
+C4 S1 G1 0.02301f
+C5 G2 D2 0.02301f
+C6 G2 G1 0.00729f
+C7 S2 S1 0.01551f
+C8 D2 G0 0.00245f
+C9 G1 G0 0.00729f
+C10 G2 S2 0.02381f
+C11 D2 D0 0.01551f
+C12 D0 G1 0.00245f
+C13 G2 S1 0.00245f
+C14 S1 G0 0.02381f
+C15 D2 G1 0.02381f
+C16 G2 G0 0.01248f
+C17 S2 D2 0.06546f
+C18 S2 B 0.18223f
+C19 D2 B 0.20931f
+C20 S1 B 0.20766f
+C21 D0 B 0.18416f
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_XQ58Y7 B D0 G0 S1 G1 D2 S2 G2 SUB
+X0 D2 G1 S1 B sky130_fd_pr__pfet_01v8 ad=0.15 pd=1.3 as=0.15 ps=1.3 w=1 l=0.18
+X1 S2 G2 D2 B sky130_fd_pr__pfet_01v8 ad=0.295 pd=2.59 as=0.15 ps=1.3 w=1 l=0.18
+X2 S1 G0 D0 B sky130_fd_pr__pfet_01v8 ad=0.15 pd=1.3 as=0.295 ps=2.59 w=1 l=0.18
+C0 G1 S1 0.01641f
+C1 S2 B 0.06825f
+C2 G2 G0 0.01299f
+C3 B D0 0.06804f
+C4 G1 G2 0.00693f
+C5 B D2 0.03371f
+C6 G1 G0 0.00693f
+C7 S2 D2 0.04699f
+C8 S1 B 0.034f
+C9 D2 D0 0.00846f
+C10 S2 S1 0.00846f
+C11 S1 D0 0.04699f
+C12 G2 B 0.13368f
+C13 S1 D2 0.04702f
+C14 B G0 0.13368f
+C15 S2 G2 0.0169f
+C16 G1 B 0.14315f
+C17 G0 D0 0.01641f
+C18 G2 D2 0.01641f
+C19 S2 G1 0.00133f
+C20 G1 D0 0.00133f
+C21 G0 D2 0.00133f
+C22 G2 S1 0.00133f
+C23 G1 D2 0.0169f
+C24 S1 G0 0.0169f
+C25 S2 SUB 0.0349f
+C26 D2 SUB 0.04532f
+C27 S1 SUB 0.046f
+C28 D0 SUB 0.03423f
+C29 B SUB 1.68315f
+.ends
+
+.subckt cmos in vdd vss out
+XXM1 vss out in vss in out vss in sky130_fd_pr__nfet_01v8_KBZXWL
+XXM2 vdd vdd in out in vdd out in vss sky130_fd_pr__pfet_01v8_XQ58Y7
+C0 vdd in 0.33497f
+C1 out in 0.19637f
+C2 out vdd 0.17706f
+C3 out vss 0.56134f
+C4 in vss 0.89685f
+C5 vdd vss 0.19854f
+.ends
+
