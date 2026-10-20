@@ -76,8 +76,4 @@ https://github.com/yathAg/Physical_Verification_SKY130A
 ![DRC Results](04_Verification/screenshots/drc.png)
 
 ### Layout Versus Schematic (LVS)
-![LVS Results](04_Verification/screenshots/lvs.png)
-
-### LVS Verification Result
-
-![LVS vs Schematic](04_Verification/screenshots/LVS%20vs%20Schematic.png)
+![LVS vs Schematic](04_Verification/screenshots/LVS%20vs%20Schematic.jpg)
