@@ -231,6 +231,9 @@ Launch Xschem to verify the Schematic editor.
 ### CMOS Inverter Schematic
 ![CMOS Inverter Schematic](01_Schematic/screenshots/schematic.png)
 
+### CMOS Testbench Schematic
+![cmos testbench](01_Schematic/screenshots/cmos testbench.jpeg)
+
 ### Transient Waveform
 ![Transient Waveform](04_Verification/screenshots/transient_waveform.png)
 
@@ -241,7 +244,7 @@ Launch Xschem to verify the Schematic editor.
 ![DRC Results](04_Verification/screenshots/drc.png)
 
 ### Checking if DRC is done
-![lvs](01_Schematic/screenshots/lvs.jpegg)
+![lvs](01_Schematic/screenshots/lvs.jpeg)
 
 ### Layout Versus Schematic (LVS)
 ![LVS vs Schematic](04_Verification/screenshots/LVS%20vs%20Schematic.jpeg)
