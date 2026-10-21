@@ -62,18 +62,17 @@ The following repository was used as a reference for understanding the physical 
 
 https://github.com/yathAg/Physical_Verification_SKY130A
 
-# Biggest (H1)
-SKY130A CMOS Inverter Design and Physical Verification
+## SKY130A CMOS Inverter Design and Physical Verification
 
-Tools Setup
+### Tools Setup
 
-Overview
+### Overview
 
 This project demonstrates the design and physical verification of a CMOS inverter using the SkyWater SKY130A open-source Process Design Kit (PDK).
 
 The workflow uses open-source Electronic Design Automation (EDA) tools for circuit simulation, physical layout design, Design Rule Checking (DRC), and Layout Versus Schematic (LVS) verification.
 
-Tools Required
+### Tools Required
 
 The following tools are used in this project:
 
@@ -86,19 +85,22 @@ SKY130A PDK| Process technology files, device models, and design rules
 
 Open_PDKs provides the technology integration needed to use the SKY130 process with supported EDA tools.
 
-Operating Environment
+### Operating Environment
 
 The project was carried out in an Ubuntu Linux environment with the SKY130A PDK and the required EDA tools.
 
 The tools were used to create and simulate a CMOS inverter, construct its physical layout, and perform physical verification.
 
-Checking Tool Installation
+### Checking Tool Installation
 
 The following commands can be used to check whether the main tools are available in the terminal:
 
 magic -version
+
 ngspice --version
+
 netgen -batch
+
 xschem --version
 
 The exact supported options may vary by installed version. If a version command is unsupported, check the tool's help output or launch the application directly.
@@ -109,7 +111,7 @@ ls /usr/local/share/pdk/sky130A/
 
 If your PDK is installed in a different directory, use its actual installation path.
 
-Tool Roles in the Verification Flow
+### Tool Roles in the Verification Flow
 
 Magic: Used to create and inspect the CMOS inverter layout, run design rule checks, and extract the layout netlist.
 
@@ -121,7 +123,7 @@ Xschem: Used to draw circuit schematics and generate SPICE netlists when require
 
 SKY130A PDK: Supplies technology-specific layer definitions, transistor models, and design rules needed for the design and verification process.
 
-Verification Workflow
+### Verification Workflow
 
 The project follows this sequence:
 
@@ -134,7 +136,7 @@ The project follows this sequence:
 7. Compare the schematic and extracted netlists using Netgen.
 8. Document the results with screenshots and verification reports.
 
-Installation References
+### Installation References
 
 Official and reference resources:
 
