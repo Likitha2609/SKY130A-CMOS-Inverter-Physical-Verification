@@ -233,7 +233,7 @@ Launch Xschem to verify the Schematic editor.
 
 ### CMOS Inverter Testbench
 The SPICE testbench provides the input stimulus and simulation commands used to evaluate the CMOS inverter's transient response.
-![CMOS Inverter Testbench](02_SPICE_Netlist/screenshots/cmos_testbench.jpeg)
+![CMOS Inverter Testbench](04_Verification/screenshots/cmos_testbench.jpeg)
 
 ### Transient Waveform
 ![Transient Waveform](04_Verification/screenshots/transient_waveform.png)
@@ -249,3 +249,29 @@ The SPICE testbench provides the input stimulus and simulation commands used to 
 
 ### Layout Versus Schematic (LVS)
 ![LVS vs Schematic](04_Verification/screenshots/LVS%20vs%20Schematic.jpeg)
+
+### Errors Encountered and How I Resolved Them
+
+During the CMOS inverter physical verification project, I faced a few issues while setting up the schematic, running the simulation, and creating the layout. Below are the errors I encountered and how I addressed them.
+
+### 1. Wrong Symbol in the Schematic
+
+Error: Initially, I had issues with the inverter symbol and its pin connections. The symbol did not match the required CMOS inverter setup.
+
+Resolution: I checked the symbol and its pin connections, then corrected the schematic setup to ensure the input, output, VDD, and GND connections were properly assigned.
+
+### 2. Incorrect CMOS Inverter Simulation
+
+Error: Initially, the CMOS inverter simulation did not produce the expected input and output waveforms.
+
+Resolution: I corrected the input pulse configuration and transient analysis settings in the testbench, then ran the simulation again using Ngspice. The final waveform showed the output switching inversely to the input, as expected from a CMOS inverter.
+
+### 3. Errors in the Layout
+
+Error: While creating the inverter layout in Magic, I encountered metal1 spacing violations. The tool reported that the spacing between metal1 shapes was less than the required 0.14 µm.
+
+Resolution: I used the DRC error messages to identify the affected areas and reviewed the metal1 shapes and their spacing. The layout needed adjustments to satisfy the applicable design rules.
+
+### What I Learned
+
+This project helped me understand that completing a circuit layout involves more than drawing the transistors and connections. The layout must follow the design rules, the extracted circuit must match the schematic, and the simulation results must be checked carefully. I learned to read error messages, inspect the affected areas, make corrections, and rerun the relevant checks. 
