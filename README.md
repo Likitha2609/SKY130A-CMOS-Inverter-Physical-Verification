@@ -207,8 +207,23 @@ Result
 
 The working directory is prepared with separate folders for Magic, Netgen, and Xschem, and the relevant SKY130A PDK configuration files are copied into place.
 
+### Screenshot Evidences
 
-## Screenshots
+### Checking if Magic Works
+
+The Magic layout editor was launched to verify that the tool was available in the configured environment.
+
+![](04_Verification/screenshots/LVS%20vs%20Schematic.jpeg)
+
+### Checking if ngspice Works
+
+The CMOS inverter was simulated using ngspice to observe the input and output waveforms.
+
+"Ngspice simulation waveform" (images/ngspice-waveform.png)
+### Checking if Netgen Works
+
+
+### Checking if Xschem Works
 ### CMOS Inverter Schematic
 ![CMOS Inverter Schematic](01_Schematic/screenshots/schematic.png)
 
