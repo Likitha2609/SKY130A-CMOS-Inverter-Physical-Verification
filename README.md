@@ -261,13 +261,13 @@ Error: Initially, I had issues with the inverter symbol and its pin connections.
 Resolution: I checked the symbol and its pin connections, then corrected the schematic setup to ensure the input, output, VDD, and GND connections were properly assigned.
 
 ### 2. Incorrect CMOS Inverter Simulation
-
+![simulation_error](04_Verification/screenshots/simulation_error.jpeg)
 Error: Initially, the CMOS inverter simulation did not produce the expected input and output waveforms.
 
 Resolution: I corrected the input pulse configuration and transient analysis settings in the testbench, then ran the simulation again using Ngspice. The final waveform showed the output switching inversely to the input, as expected from a CMOS inverter.
 
 ### 3. Errors in the Layout
-
+![layout_error](04_Verification/screenshots/layout_error.jpeg)
 Error: While creating the inverter layout in Magic, I encountered metal1 spacing violations. The tool reported that the spacing between metal1 shapes was less than the required 0.14 µm.
 
 Resolution: I used the DRC error messages to identify the affected areas and reviewed the metal1 shapes and their spacing. The layout needed adjustments to satisfy the applicable design rules.
