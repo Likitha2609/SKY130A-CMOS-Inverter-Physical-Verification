@@ -240,5 +240,8 @@ Launch Xschem to verify the Schematic editor.
 ### Design Rule Check (DRC)
 ![DRC Results](04_Verification/screenshots/drc.png)
 
+### Checking if DRC is done
+![lvs](01_Schematic/screenshots/lvs.jpegg)
+
 ### Layout Versus Schematic (LVS)
 ![LVS vs Schematic](04_Verification/screenshots/LVS%20vs%20Schematic.jpeg)
