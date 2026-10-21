@@ -234,7 +234,7 @@ Launch Xschem to verify the Schematic editor.
 ### CMOS Inverter Testbench
 The SPICE testbench provides the input stimulus and simulation commands used to evaluate the CMOS inverter's transient response.
 
-![CMOS Inverter Testbench](02_SPICE_Netlist/screenshots/cmos_testbench.png)
+![CMOS Inverter Testbench](02_SPICE_Netlist/screenshots/cmos_testbench.jpeg)
 
 ### Transient Waveform
 ![Transient Waveform](04_Verification/screenshots/transient_waveform.png)
