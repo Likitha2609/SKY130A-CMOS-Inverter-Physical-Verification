@@ -213,17 +213,21 @@ The working directory is prepared with separate folders for Magic, Netgen, and X
 
 The Magic layout editor was launched to verify that the tool was available in the configured environment.
 
-![](04_Verification/screenshots/LVS%20vs%20Schematic.jpeg)
+![magic](04_Verification/screenshots/magic.jpeg)
 
 ### Checking if ngspice Works
 
 The CMOS inverter was simulated using ngspice to observe the input and output waveforms.
 
-"Ngspice simulation waveform" (images/ngspice-waveform.png)
+![ngspice](04_Verification/screenshots/ngspice.jpeg)
 ### Checking if Netgen Works
-
+Launch Netgen to verify the LVS tool
+![netgen](04_Verification/screenshots/netgen.jpeg)
 
 ### Checking if Xschem Works
+Launch Xschem to verify the Schematic editor.
+![Xschem](04_Verification/screenshots/Xschem.jpeg)
+
 ### CMOS Inverter Schematic
 ![CMOS Inverter Schematic](01_Schematic/screenshots/schematic.png)
 
