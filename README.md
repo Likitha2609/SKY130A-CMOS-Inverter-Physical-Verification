@@ -231,11 +231,11 @@ Launch Xschem to verify the Schematic editor.
 ### CMOS Inverter Schematic
 ![CMOS Inverter Schematic](01_Schematic/screenshots/schematic.png)
 
-### Final Magic Layout
-![Final Layout](03_Magic_Layout/screenshots/final_layout.png)
-
 ### Transient Waveform
 ![Transient Waveform](04_Verification/screenshots/transient_waveform.png)
+
+### Final Magic Layout
+![Final Layout](03_Magic_Layout/screenshots/final_layout.png)
 
 ### Design Rule Check (DRC)
 ![DRC Results](04_Verification/screenshots/drc.png)
