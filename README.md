@@ -147,8 +147,68 @@ Official and reference resources:
 - SkyWater PDK: https://github.com/google/skywater-pdk
 - Open_PDKs: https://github.com/RTimothyEdwards/open_pdks
 
-## Screenshots
+### Verifying the open_pdk installation
 
+An initial working directory can be created to organize the files required for Magic, Netgen, and Xschem.
+
+### Creating the working directories
+
+mkdir -p ~/sky130_lab
+cd ~/sky130_lab
+
+mkdir -p mag
+mkdir -p netgen
+mkdir -p xschem
+
+### Checking the SKY130A PDK installation
+
+Verify that the SKY130A PDK is available at the default installation path:
+
+ls /usr/local/share/pdk/sky130A/
+
+### Check the configuration files required by the EDA tools:
+
+ls /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc
+
+ls /usr/local/share/pdk/sky130A/libs.tech/xschem/xschemrc
+
+ls /usr/local/share/pdk/sky130A/libs.tech/ngspice/spinit
+
+ls /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
+
+### Copying the configuration files
+
+If the files exist at the specified paths, copy them into the working directories:
+
+cp /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc \
+   ~/sky130_lab/mag/.magicrc
+
+cp /usr/local/share/pdk/sky130A/libs.tech/xschem/xschemrc \
+   ~/sky130_lab/xschem/xschemrc
+
+cp /usr/local/share/pdk/sky130A/libs.tech/ngspice/spinit \
+   ~/sky130_lab/xschem/.spiceinit
+
+cp /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl \
+   ~/sky130_lab/netgen/
+
+### Checking the EDA tools
+
+Confirm that the required tools are available:
+
+which magic
+which netgen
+which ngspice
+which xschem
+
+Each command should return the executable path if the corresponding tool is installed and available in the system's PATH.
+
+Result
+
+The working directory is prepared with separate folders for Magic, Netgen, and Xschem, and the relevant SKY130A PDK configuration files are copied into place.
+
+
+## Screenshots
 ### CMOS Inverter Schematic
 ![CMOS Inverter Schematic](01_Schematic/screenshots/schematic.png)
 
