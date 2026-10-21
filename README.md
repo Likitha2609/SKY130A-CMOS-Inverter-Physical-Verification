@@ -61,6 +61,89 @@ Through this task, I gained practical experience with the CMOS inverter design f
 The following repository was used as a reference for understanding the physical verification flow:
 
 https://github.com/yathAg/Physical_Verification_SKY130A
+
+SKY130A CMOS Inverter Design and Physical Verification
+
+Tools Setup
+
+Overview
+
+This project demonstrates the design and physical verification of a CMOS inverter using the SkyWater SKY130A open-source Process Design Kit (PDK).
+
+The workflow uses open-source Electronic Design Automation (EDA) tools for circuit simulation, physical layout design, Design Rule Checking (DRC), and Layout Versus Schematic (LVS) verification.
+
+Tools Required
+
+The following tools are used in this project:
+
+Tool| Purpose
+Magic| CMOS layout design, extraction, and DRC
+Netgen| Layout Versus Schematic (LVS) comparison
+ngspice| Circuit simulation and waveform analysis
+Xschem| Schematic capture and SPICE netlist generation
+SKY130A PDK| Process technology files, device models, and design rules
+
+Open_PDKs provides the technology integration needed to use the SKY130 process with supported EDA tools.
+
+Operating Environment
+
+The project was carried out in an Ubuntu Linux environment with the SKY130A PDK and the required EDA tools.
+
+The tools were used to create and simulate a CMOS inverter, construct its physical layout, and perform physical verification.
+
+Checking Tool Installation
+
+The following commands can be used to check whether the main tools are available in the terminal:
+
+magic -version
+ngspice --version
+netgen -batch
+xschem --version
+
+The exact supported options may vary by installed version. If a version command is unsupported, check the tool's help output or launch the application directly.
+
+The SKY130A PDK files can be checked using:
+
+ls /usr/local/share/pdk/sky130A/
+
+If your PDK is installed in a different directory, use its actual installation path.
+
+Tool Roles in the Verification Flow
+
+Magic: Used to create and inspect the CMOS inverter layout, run design rule checks, and extract the layout netlist.
+
+Netgen: Used to compare the schematic and extracted layout netlists to identify connectivity or device mismatches.
+
+ngspice: Used to simulate the inverter and observe its input and output voltage waveforms.
+
+Xschem: Used to draw circuit schematics and generate SPICE netlists when required.
+
+SKY130A PDK: Supplies technology-specific layer definitions, transistor models, and design rules needed for the design and verification process.
+
+Verification Workflow
+
+The project follows this sequence:
+
+1. Understand the SKY130A process and the EDA tools.
+2. Prepare the circuit schematic and SPICE netlist.
+3. Simulate the CMOS inverter using ngspice.
+4. Create the physical layout in Magic.
+5. Run Design Rule Checking (DRC).
+6. Extract the layout netlist.
+7. Compare the schematic and extracted netlists using Netgen.
+8. Document the results with screenshots and verification reports.
+
+Installation References
+
+Official and reference resources:
+
+- Magic: http://opencircuitdesign.com/magic/
+- Netgen: http://opencircuitdesign.com/netgen/
+- Xschem: https://xschem.sourceforge.io/
+- ngspice: https://ngspice.sourceforge.io/
+- SkyWater PDK: https://github.com/google/skywater-pdk
+- Open_PDKs: https://github.com/RTimothyEdwards/open_pdks
+
 ## Screenshots
 
 ### CMOS Inverter Schematic
